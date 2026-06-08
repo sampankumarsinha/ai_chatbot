@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: ai-nodejs-server
+    env: node
+    region: oregon
+    plan: starter
+    rootDir: nodejs-ai-assistant
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: STREAM_API_KEY
+        sync: false
+      - key: STREAM_API_SECRET
+        sync: false
+      - key: AGENT_PLATFORM
+        value: gemini
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-1.5-flash
+      - key: GEMINI_MAX_TOKENS
+        value: "220"
+      - key: GEMINI_TEMPERATURE
+        value: "0.4"
+      - key: GEMINI_STREAM_FLUSH_MS
+        value: "500"
+      - key: GEMINI_STREAM_MIN_CHARS
+        value: "24"
+      - key: ALLOWED_ORIGIN
+        sync: false

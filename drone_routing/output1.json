@@ -1,0 +1,59 @@
+{
+  "flight_manifest": [
+    {
+      "drone_id": "drone_1",
+      "path": [
+        {
+          "action": "PICKUP",
+          "delivery_ids": [
+            "d1",
+            "d2",
+            "d3"
+          ],
+          "t": 0.0,
+          "x": 100.0,
+          "y": 100.0
+        },
+        {
+          "action": "DELIVER",
+          "delivery_id": "d1",
+          "t": 90.0,
+          "x": 10.0,
+          "y": 100.0
+        },
+        {
+          "action": "DELIVER",
+          "delivery_id": "d2",
+          "t": 180.0,
+          "x": 10.0,
+          "y": 10.0
+        },
+        {
+          "action": "DELIVER",
+          "delivery_id": "d3",
+          "t": 270.0,
+          "x": 100.0,
+          "y": 10.0
+        },
+        {
+          "action": "CHARGE",
+          "t": 270.0,
+          "x": 100.0,
+          "y": 10.0
+        },
+        {
+          "action": "CHARGE_COMPLETE",
+          "t": 281.0,
+          "x": 100.0,
+          "y": 10.0
+        },
+        {
+          "action": "RETURN",
+          "t": 371.0,
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    }
+  ]
+}
