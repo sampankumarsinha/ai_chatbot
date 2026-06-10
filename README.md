@@ -1,4 +1,5 @@
 # Chat AI App
+## Just one important instruction-while running the app for the first time in chatbox,just trigger the questions two times at first.Since the api working behind is in sleep mode,once you trigger the message two times,apis woke up ,you will automatically get the replies instantly.
 
 A modern AI-powered chat application built with **Stream Chat**, **OpenAI**, and **web search capabilities**. This full-stack application provides an intelligent writing assistant that can help with content creation, research, and real-time collaboration.
 
